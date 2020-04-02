@@ -1,9 +1,8 @@
-NAME = game
+NAME = dbrealestate
 
 CC = g++
 
 SRCDIR = src
-OBJDIR = obj
 
 FLAGS = -lsfml-graphics -lsfml-window -lsfml-system
 
@@ -17,18 +16,14 @@ all: $(NAME)
 	@echo "MAKE ALL IS DONE"
 
 $(NAME):
-	@ g++ -Wall -I/usr/include/cppconn -o dbrealestate main.cpp -L/usr/lib -lmysqlcppconn
-	@sh cp.sh main.cpp dbrealestate
+	@ g++ -Wall -I/usr/include/cppconn -o $(NAME) main.cpp -L/usr/lib -lmysqlcppconn
+	@sh ../cmd/cp.sh main.cpp $(NAME)
 
 clean:
-	@$(RM) $(OBJDIR)
+	@$(RM) $(NAME)
 	@echo "MAKE CLEAN IS DONE"
 
-fclean: clean
-	@$(RM) $(NAME)
-	@echo "MAKE FCLEAN IS DONE"
-
-re: fclean all
+re: clean all
 	@echo "MAKE RE IS DONE"
 
-.PHONY: clean fclean
+.PHONY: clean
