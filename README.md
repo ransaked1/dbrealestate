@@ -55,7 +55,7 @@ Rebuild the project (If you made changes to the code):
 make re
 ```
 
-## Built With
+### Built With
 * [Docker](https://docs.docker.com/get-started/) - Container system
 * [MySQL](https://dev.mysql.com/doc/) - Database environment
 * [phpMyAdmin](https://docs.phpmyadmin.net/en/latest/) - Graphical inteface for the database
