@@ -4,7 +4,7 @@ A real estate MySQL database generated using C++
 ## Getting Started
 
 ### Prerequisites
-To create a dynamic environment for MySQL and phpMyAdmin we will use Docker. You can find how to install it on Linux in this guide: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+To create a dynamic environment for MySQL and phpMyAdmin we will use Docker. You can find how to install it on Linux in this [guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
 To install Docker Compose type:
 ```
@@ -33,7 +33,7 @@ To check that everything runs smoothly type:
 sudo docker container list
 ```
 
-You should see two containers running (MySQL and phpMyAdmin). If everything worked fine you should be able to access phpMyAdmin via browser by entering http://127.1.0.0/
+You should see two containers running (MySQL and phpMyAdmin). If everything worked fine you should be able to access phpMyAdmin via browser by accessing http://127.1.0.0/
 
 Access /src folder and run:
 ```
